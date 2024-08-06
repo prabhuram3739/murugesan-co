@@ -1,16 +1,40 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f9;
     color: #333;
 }
 
-header, footer {
-    background-color: #003366;
+header {
+    background: linear-gradient(45deg, #6a0572, #9c27b0);
     color: white;
+    padding: 1em 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 1em;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.header-text {
     text-align: center;
-    padding: 1em;
 }
 
 header h1 {
@@ -26,10 +50,10 @@ header p {
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
     gap: 2em;
-    margin: 1em 0 0;
 }
 
 nav ul li {
@@ -40,10 +64,14 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 0.5em;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: white;
+    color: #6a0572;
+    border-radius: 4px;
 }
 
 .container {
@@ -53,9 +81,9 @@ nav ul li a:hover {
 }
 
 h2 {
-    color: #003366;
+    color: #6a0572;
     font-size: 1.8em;
-    border-bottom: 2px solid #003366;
+    border-bottom: 2px solid #6a0572;
     padding-bottom: 0.5em;
 }
 
@@ -63,6 +91,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     gap: 2em;
+    justify-content: space-between;
 }
 
 .service {
@@ -81,7 +110,7 @@ h2 {
 .service img {
     width: 100%;
     height: auto;
-    border-bottom: 3px solid #003366;
+    border-bottom: 3px solid #6a0572;
     border-radius: 8px 8px 0 0;
 }
 
@@ -107,7 +136,7 @@ input, textarea {
 
 button {
     padding: 1em;
-    background-color: #003366;
+    background-color: #6a0572;
     color: white;
     border: none;
     border-radius: 4px;
@@ -117,7 +146,15 @@ button {
 }
 
 button:hover {
-    background-color: #002244;
+    background-color: #9c27b0;
+}
+
+footer {
+    background-color: #6a0572;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
 }
 
 footer p {
