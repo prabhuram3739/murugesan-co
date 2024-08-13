@@ -20,12 +20,13 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 1em;
+    flex-wrap: wrap;
 }
 
 .logo {
-    margin-right: 1em;
     width: 120px;
     height: auto;
+    margin-right: 1em;
 }
 
 .header-text {
@@ -121,6 +122,8 @@ input, textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 button {
@@ -163,6 +166,10 @@ footer p {
         margin-bottom: 1em;
     }
 
+    .header-text {
+        text-align: center;
+    }
+
     nav ul {
         flex-direction: column;
         gap: 1em;
@@ -175,6 +182,11 @@ footer p {
     .service {
         flex: 1 1 100%;
         margin-bottom: 2em;
+    }
+
+    form {
+        width: 100%;
+        padding: 1em;
     }
 }
 
@@ -197,5 +209,9 @@ footer p {
 
     input, textarea, button {
         font-size: 0.9em;
+    }
+
+    .logo {
+        width: 80px;
     }
 }
