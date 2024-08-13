@@ -200,7 +200,8 @@ footer {
     }
 
     .container {
-        padding: 0.09em;
+        padding-left: 1em;
+        padding-right: 1em;
     }
 
     .services {
