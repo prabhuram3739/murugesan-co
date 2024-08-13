@@ -200,7 +200,7 @@ footer {
     }
 
     .container {
-        padding: 0.2em;
+        padding: 0.09em;
     }
 
     .services {
@@ -258,6 +258,5 @@ footer {
 
     .logo {
         position: relative;
-        width: 100%;
     }
 }
