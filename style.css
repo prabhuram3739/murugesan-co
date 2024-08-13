@@ -192,8 +192,7 @@ footer {
 
     .logo {
         position: relative;
-
-        margin-bottom: 1em;
+        margin-top: -42px;
     }
 
     .header-text {
